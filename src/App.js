@@ -10,11 +10,13 @@ import FacultyList from './components/FacultyList';
 import UpdateFaculty from './components/UpdateFaculty';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Welcome from './components/Welcome';
 
 
 const myRouter = createBrowserRouter([
   {path:'login' , Component:Login},
   {path:'signup' , Component:Signup},
+  {path:'/' , Component:Welcome},
   {path:'dashboard',Component:Dashboard ,
       children:[
       {path:'', Component:StudentList},
