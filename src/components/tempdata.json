@@ -1,0 +1,9 @@
+{
+    "vercel":2,
+    "name":"fire-react-sbs",
+    "builds":[
+        {"src":"app.js" , "use":"@vercel/node"}
+    ],
+    "routes":[
+        {"src":"/(.*)", "dest":"/app.js"}]
+}
